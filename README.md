@@ -13,3 +13,7 @@
 ## Dvorak用の配列
 
 - romantable と組み合わせること
+
+## 絵文字入力用辞書
+
+<https://github.com/peaceiris/emoji-ime-dictionary>
