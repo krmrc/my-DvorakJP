@@ -1,0 +1,15 @@
+èáÇ…ë≈åÆÇ∑ÇÈîzóÒ
+
+/*
+ * DvorakJP
+ * http://www7.plala.or.jp/dvorakjp/
+ */
+
+
+/* íPë≈ */
+[
+ÇP|ÇQ|ÇR|ÇS|ÇT|ÇU|ÇV|ÇW|ÇX|ÇO|Å{|ÅO|Åñ|
+Åó|ÅA|ÅB|p |y |f |g |c |r |l |ÅE|Åu|
+a |o |e |i |u |d |h |t |n |s |Å[|Åv|
+ÅG|q |j |k |x |b |m |w |v |z |\|
+]
