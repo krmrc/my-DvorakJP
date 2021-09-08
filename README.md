@@ -7,8 +7,7 @@
 
 ## romantable
 
-- 記号の変換がオリジナル
-- 絵文字を追加。
+- 概ね[これ](https://github.com/shinespark/dvorakjp-romantable)
 
 ## Dvorak用の配列
 
