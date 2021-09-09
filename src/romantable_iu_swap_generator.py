@@ -10,9 +10,9 @@ FILE_TAPGET_ROMANTABLE = "./romantable_IU_Swap_emoji.txt"
 def make_array2d() -> list:
     with open(FILE_BASE_ROMANTABLE) as f:
         all_str = f.read()
-    all_str = all_str.replace('\t', ' ')
+    all_str = all_str.replace(' ', '\t')
     all_str = StringIO(all_str)
-    reader = csv.reader(all_str, delimiter=' ')
+    reader = csv.reader(all_str, delimiter='\t')
     return [row for row in reader]
 
 
@@ -61,7 +61,7 @@ def main():
     new_table.extend(tmp_table2)
 
     with open(FILE_TAPGET_ROMANTABLE, 'w') as f:
-        writer = csv.writer(f, delimiter=' ')
+        writer = csv.writer(f, delimiter='\t')
         writer.writerows(get_unique_list(new_table))
 
 

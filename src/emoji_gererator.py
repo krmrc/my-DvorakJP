@@ -55,4 +55,4 @@ with open(FILE_ROMANTABLE, 'r') as f:
 with open(FILE_ROMANTABLE_EMOJI, 'w') as f:
     f.write(rt)
     for t in sorted(dic.items()):
-        f.write(f"{t[0]} {t[1]}\n")
+        f.write(f"{t[0]}\t{t[1]}\n")
