@@ -20,4 +20,5 @@ romantable と組み合わせること
 
 ## 絵文字入力用辞書
 
-<https://github.com/peaceiris/emoji-ime-dictionary>
+- <https://github.com/peaceiris/emoji-ime-dictionary>
+  - `:` を `@` に置換したものを登録する。
