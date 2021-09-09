@@ -25,10 +25,11 @@ for code, v in r.json().items():
     else:
         emoji = chr(int(code_points, 16))
 
-    pre_dic[shortname] = emoji
+    if (not "_tone" in shortname):
+        pre_dic[shortname] = emoji
 
     for i in shortname_alternates:
-        if not i.startswith(shortname):
+        if not i.startswith(shortname) and (not "_tone" in i):
             pre_dic[i.rstrip(':')] = emoji
 
 dic = {}
