@@ -2,21 +2,22 @@
 
 ## keymap.txt
 
-- Google日本語入力にインポート
-- かな変換キーを無効化
+- Google日本語入力にインポートする。
+- かな変換キーを無効化している。
 
 ## romantable.txt
 
-- [参考](https://github.com/shinespark/dvorakjp-romantable)
-- [絵文字](https://raw.githubusercontent.com/joypixels/emoji-toolkit/master/emoji.json)
+[参考](https://github.com/shinespark/dvorakjp-romantable)
 
 ## romantable_IU_Swap.txt
 
-英語と日本語のどちらでも、Iの方が使用頻度が高いためIとUを入れ替えたもの。子音+k/xも交換済み。
+`I`と`U`を入れ替えた配列用。子音+k/xを交換。
 
-## Dvorak用の配列
+- 英語と日本語のどちらでも `I` の方が使用頻度が高い。
 
-romantable と組み合わせること
+## romantable_emoji.txt
+
+[絵文字](https://raw.githubusercontent.com/joypixels/emoji-toolkit/master/emoji.json)
 
 ## 絵文字入力用辞書
 

@@ -3,6 +3,7 @@ import sys
 # import pprint
 
 FILE_ROMANTABLE = "./romantable.txt"
+FILE_ROMANTABLE_EMOJI = "./romantable_emoji.txt"
 
 URL = 'https://raw.githubusercontent.com/joypixels/emoji-toolkit/master/emoji.json'
 r = requests.get(URL)
@@ -47,6 +48,10 @@ for k, v in pre_dic.items():
 
 # pprint.pprint(dic)
 # print(len(dic))
-with open(FILE_ROMANTABLE, 'a') as f:
+rt = ""
+with open(FILE_ROMANTABLE, 'r') as f:
+    rt = f.read()
+with open(FILE_ROMANTABLE_EMOJI, 'w') as f:
+    f.write(rt)
     for t in sorted(dic.items()):
         f.write(f"{t[0]} {t[1]}\n")

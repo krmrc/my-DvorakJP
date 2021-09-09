@@ -1,14 +1,14 @@
 import csv
 from io import StringIO
 
-FILE_ROMANTABLE = "./romantable.txt"
-FILE_ROMANTABLE_IU = "./romantable_IU_Swap.txt"
+FILE_BASE_ROMANTABLE = "./romantable_emoji.txt"
+FILE_TAPGET_ROMANTABLE = "./romantable_IU_Swap_emoji.txt"
 
 # 子音+k or x なら、kとxをスワップ
 
 
 def make_array2d() -> list:
-    with open(FILE_ROMANTABLE) as f:
+    with open(FILE_BASE_ROMANTABLE) as f:
         all_str = f.read()
     all_str = all_str.replace('\t', ' ')
     all_str = StringIO(all_str)
@@ -60,7 +60,7 @@ def main():
                 i += 1
     new_table.extend(tmp_table2)
 
-    with open(FILE_ROMANTABLE_IU, 'w') as f:
+    with open(FILE_TAPGET_ROMANTABLE, 'w') as f:
         writer = csv.writer(f, delimiter=' ')
         writer.writerows(get_unique_list(new_table))
 
